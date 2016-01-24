@@ -24,7 +24,7 @@ The reading can be done through I2C, and you can see the connection [here](http:
 We use a simple lithium battery connected to a power charger. (see next section for connections). 
 In the Arduino sketch, you'll find how we handle power management. However, the limit we face with the Arduino Bluno Nano, is that we can only put the ATMega chip to sleep. Meanwhile, the TI CC2540 BT is still active and the bluetooth is discoverable.
 #### 2.1.2. Schema & Description
-![alt text](Connections.tiff "Schematics")
+![alt text](Connections.png "Schematics")
 **Note:** *The composant shown in the schema are only representative and are not the actual real components. (For a list of the real components and where they have been bought, please read the inventory.*
 #### 2.1.3. Limits
 ##### 2.1.3.1. Pressure variation outside the mask
