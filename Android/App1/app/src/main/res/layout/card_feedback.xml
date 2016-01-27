@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_feedback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/border_margin"
+        android:layout_marginTop="@dimen/quarter_border"
+        android:text="Title"
+        android:textSize="@dimen/feedback_size" />
+
+    <SeekBar
+        android:id="@+id/feedback_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/feedback_bad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/quarter_border"
+        android:layout_marginStart="@dimen/border_margin"
+        android:text="Bad"
+        android:textSize="@dimen/feedback_small_size" />
+
+    <TextView
+        android:id="@+id/feedback_good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/quarter_border"
+        android:layout_marginEnd="@dimen/border_margin"
+        android:text="Good"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/feedback_small_size" />
+</RelativeLayout>

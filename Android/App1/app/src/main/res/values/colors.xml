@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#EF1626</color>
+    <color name="ColorPrimaryDark">#D3000F</color>
+    <color name="ColorTextDrawerDefault">#888888</color>
+
+    <color name="ColorGraphPrimary">#56A9F6</color>
+    <color name="ColorGraphPrimaryDark">#1167BD</color>
+
+    <!-- Catergories colors. -->
+    <color name="ColorWork">#75c0ff</color>
+    <color name="ColorWorkDark">#4b9cdf</color>
+    <color name="ColorYoga">#44e4aa</color>
+    <color name="ColorYogaDark">#2ed297</color>
+    <color name="ColorRunning">#ff5454</color>
+    <color name="ColorRunningDark">#d72828</color>
+    <color name="ColorRelax">#d33bff</color>
+    <color name="ColorRelaxDark">#bd28e8</color>
+    <color name="ColorCommute">#ffac41</color>
+    <color name="ColorCommuteDark">#f4951b</color>
+    <color name="ColorSleep">#6d6df0</color>
+    <color name="ColorSleepDark">#4f4fda</color>
+
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_activity_category"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+
+    <FrameLayout
+        android:id="@+id/act_img_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/act_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleX="0.75"
+            android:scaleY="0.75" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/act_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="Title" />
+
+</LinearLayout>
+

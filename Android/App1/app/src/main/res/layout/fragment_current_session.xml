@@ -1,0 +1,51 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.sendinaden.app1.fragments.CurrentSessionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/current_session_livegraph"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_session_livegraph"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Duration: 0:34:56"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerSparklines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duration"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/current_session_livegraph"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:onClick="endSession"
+        android:src="@drawable/ic_pause_black_24dp"
+        android:tint="#ffffff"
+        app:layout_anchor="@id/current_session_livegraph"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>

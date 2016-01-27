@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/half_border_margin"
+    tools:context="com.sendinaden.app1.fragments.FeedbackFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.FeedbackCard
+                android:id="@+id/calmnessCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bad="@string/calmess_bad"
+                custom:good="@string/calmness_good"
+                custom:max="10"
+                custom:name="@string/calmness" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.FeedbackCard
+                android:id="@+id/comfortCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bad="@string/comfort_bad"
+                custom:good="@string/comfort_good"
+                custom:max="10"
+                custom:name="@string/comfort" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.FeedbackCard
+                android:id="@+id/energeticCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bad="@string/energitic_bad"
+                custom:good="@string/energetic_good"
+                custom:max="10"
+                custom:name="@string/energetic" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.FeedbackCard
+                android:id="@+id/overallCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bad="@string/overall_bad"
+                custom:good="@string/overall_good"
+                custom:max="10"
+                custom:name="@string/overall" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+
+            <include
+                layout="@layout/card_feedback_total"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

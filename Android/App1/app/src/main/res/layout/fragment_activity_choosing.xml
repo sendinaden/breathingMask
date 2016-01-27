@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/half_border_margin"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.ActivityCategory
+                android:id="@+id/YogaCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bg_color="@color/ColorYoga"
+                custom:img_size="0.75"
+                custom:img_src="@drawable/yoga"
+                custom:titleText="@string/yoga">
+
+
+            </com.sendinaden.app1.customViews.ActivityCategory>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.ActivityCategory
+                android:id="@+id/RunningCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bg_color="@color/ColorRunning"
+                custom:img_size="0.75"
+                custom:img_src="@drawable/running"
+                custom:titleText="@string/running">
+
+
+            </com.sendinaden.app1.customViews.ActivityCategory>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.ActivityCategory
+                android:id="@+id/RelaxCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bg_color="@color/ColorRelax"
+                custom:img_size="0.75"
+                custom:img_src="@drawable/meditation"
+                custom:titleText="@string/relax">
+
+
+            </com.sendinaden.app1.customViews.ActivityCategory>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.ActivityCategory
+                android:id="@+id/CommuteCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:bg_color="@color/ColorCommute"
+                custom:img_size="0.75"
+                custom:img_src="@drawable/commute"
+                custom:titleText="@string/commute">
+
+
+            </com.sendinaden.app1.customViews.ActivityCategory>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.ActivityCategory
+                android:id="@+id/SleepCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                custom:bg_color="@color/ColorSleep"
+                custom:img_size="0.75"
+                custom:img_src="@drawable/sleep"
+                custom:titleText="@string/sleep">
+
+
+            </com.sendinaden.app1.customViews.ActivityCategory>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="@dimen/half_border_margin">
+
+            <com.sendinaden.app1.customViews.ActivityCategory
+                android:id="@+id/WorkCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                custom:bg_color="@color/ColorWork"
+                custom:img_size="0.75"
+                custom:img_src="@drawable/work"
+                custom:titleText="@string/work">
+
+
+            </com.sendinaden.app1.customViews.ActivityCategory>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

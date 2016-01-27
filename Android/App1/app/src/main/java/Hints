@@ -1,0 +1,18 @@
+- Elevation shadows not showing on cardview
+    + I put the cardview in a frame layout and followed this
+    http://stackoverflow.com/questions/27477371/android-elevation-not-showing-a-shadow
+    + put the cardview in a container that has a padding
+
+
+- Rounded corners in shape
+    + don't forget that you have only one <corner/> attribute, so put everything inside instead of
+        creating many
+    + look in the custom view, we add the drawable background, then we change this drawable GradientColor
+
+- Back and confirm button instead of sandwich
+    + New Activity according to this:
+        http://stackoverflow.com/questions/28531503/toolbar-switching-from-drawer-to-back-button-with-only-one-activity
+
+
+- Be carefull shared preferences keys are saved on the phone and you need to clear the cache if you want to delete previous ones
+    + the problem is that if you register a key than you can't use it anymore
